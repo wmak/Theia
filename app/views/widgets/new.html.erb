@@ -1,0 +1,17 @@
+<h1>New Widget</h1>
+
+<%= form_for :widgets, url: widgets_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :code %><br>
+    <%= f.text_area :code %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
