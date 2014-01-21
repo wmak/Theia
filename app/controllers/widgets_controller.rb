@@ -11,7 +11,7 @@ class WidgetsController < ApplicationController
 	def show
 		@widget = Widget.find(params[:id])
 	end
-
+	
 	private
 		def widgets_params
 			params.require(:widgets).permit(:title, :code)

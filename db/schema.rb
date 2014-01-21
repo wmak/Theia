@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140120232735) do
+ActiveRecord::Schema.define(version: 20140121213705) do
+
+  create_table "readings", force: true do |t|
+    t.float    "temp"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "fan"
+  end
 
   create_table "widgets", force: true do |t|
     t.string   "title"
