@@ -22,7 +22,7 @@
 			}
 			function drawFanChart() {
 				var data = google.visualization.arrayToDataTable([
-				['Time', 'Temperature'],
+				['Time', 'RPMs'],
 				<% @readings.each do |reading| %>
 					[new Date ("<%=reading.created_at%>") , <%=reading.fan%>],
 				<% end %>
@@ -38,7 +38,7 @@
 		</script>
 	</head>
 	<body>
-		<div id="temp_div" style="width: 900px; height: 500px;"></div>
-		<div id="fan_div" style="width: 900px; height: 500px;"></div>
+		<div id="temp_div" style="width: 400px; height: 200px;"></div>
+		<div id="fan_div" style="width: 400px; height: 200px;"></div>
 	</body>
 </html>
