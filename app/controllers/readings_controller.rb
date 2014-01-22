@@ -1,7 +1,6 @@
 class ReadingsController < ApplicationController
-	def create
-		@readings = Readings.new(readings_params)
-		@readings.save
+	def index
+		@readings = Reading.all
 	end
 
 	private

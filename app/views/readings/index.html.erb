@@ -1,0 +1,17 @@
+<h1>Listing readings</h1>
+ 
+<table>
+	<tr>
+		<th>Fan RPM</th>
+		<th>Temperature</th>
+		<th>Time</th>
+	</tr>
+
+	<% @readings.each do |reading| %>
+	<tr>
+		<td><%= reading.fan %></td>
+		<td><%= reading.temp %></td>
+		<td><%= reading.updated_at %></td>
+	</tr>
+	<% end %>
+</table>
