@@ -1,0 +1,667 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"av",
+				"average_temp"
+			],
+			[
+				"read",
+				"reading"
+			],
+			[
+				"my",
+				"my_filter"
+			],
+			[
+				"G",
+				"GOOD_REQUEST"
+			],
+			[
+				"for",
+				"forecast"
+			],
+			[
+				"get",
+				"get_location"
+			],
+			[
+				"zip",
+				"zip_code"
+			],
+			[
+				"sr",
+				"src_y"
+			],
+			[
+				"it",
+				"iteration"
+			],
+			[
+				"curren",
+				"current"
+			],
+			[
+				"src",
+				"src_x"
+			],
+			[
+				"int",
+				"interpolation"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"R",
+				"R"
+			],
+			[
+				"dest_x",
+				"dest_x"
+			],
+			[
+				"src_y",
+				"src_y"
+			],
+			[
+				"fl",
+				"fl_x"
+			],
+			[
+				"cur",
+				"current_iteration"
+			],
+			[
+				"cu",
+				"current_iteration"
+			],
+			[
+				"curr",
+				"current_iteration"
+			],
+			[
+				"current",
+				"current_iteration"
+			],
+			[
+				"fl1",
+				"fl1_y"
+			],
+			[
+				"dy1",
+				"dy1_array"
+			],
+			[
+				"des",
+				"dest_y-1"
+			],
+			[
+				"dy",
+				"dy1_array"
+			],
+			[
+				"dy_a",
+				"dy_array"
+			],
+			[
+				"cl",
+				"cl_y_array"
+			],
+			[
+				"fl_y",
+				"fl_y_array"
+			],
+			[
+				"de",
+				"dest_y"
+			],
+			[
+				"dest",
+				"dest_y"
+			],
+			[
+				"to",
+				"to_switch"
+			],
+			[
+				"tim",
+				"time_range"
+			],
+			[
+				"has",
+				"has_key"
+			],
+			[
+				"V",
+				"VXlim"
+			],
+			[
+				"Vy",
+				"VYlim"
+			],
+			[
+				"Vel",
+				"Velocity_Y_robust"
+			],
+			[
+				"Th",
+				"Thruster_robust"
+			],
+			[
+				"fin",
+				"final_power"
+			],
+			[
+				"final",
+				"final_angle"
+			],
+			[
+				"Set",
+				"Set_Angle"
+			],
+			[
+				"base",
+				"base_angle"
+			],
+			[
+				"Pos",
+				"Position_X_robust"
+			],
+			[
+				"Velocity_X",
+				"Velocity_X_robust"
+			],
+			[
+				"Pl",
+				"PLAT_Y"
+			],
+			[
+				"Po",
+				"Position_Y_robust"
+			],
+			[
+				"within",
+				"within_range"
+			],
+			[
+				"witn",
+				"within_range"
+			],
+			[
+				"Main",
+				"Main_Thruster"
+			],
+			[
+				"Ang",
+				"Angle_robust"
+			],
+			[
+				"model",
+				"model_type"
+			],
+			[
+				"r",
+				"radius"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"descr",
+				"describe"
+			],
+			[
+				"text",
+				"text_id"
+			],
+			[
+				"trav",
+				"traversed"
+			],
+			[
+				"pric",
+				"price"
+			],
+			[
+				"prd",
+				"products"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/readings/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/mixitup.min.js",
+			"settings":
+			{
+				"buffer_size": 16321,
+				"line_ending": "Unix",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "app/models/reading.rb",
+			"settings":
+			{
+				"buffer_size": 587,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 66.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package contro",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 632.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/wmak/development/Theia/app/controllers/readings_controller.rb",
+		"/home/wmak/development/Theia/app/assets/javascripts/readings.js.coffee",
+		"/home/wmak/development/Theia/config/routes.rb",
+		"/home/wmak/development/Theia/config/schedule.rb",
+		"/home/wmak/development/Theia/app/views/welcome/index.html.erb",
+		"/home/wmak/development/Theia/app/views/widgets/new.html.erb",
+		"/home/wmak/development/Theia/app/controllers/widgets_controller.rb",
+		"/home/wmak/development/Theia/app/views/widgets/show.html.erb",
+		"/home/wmak/development/Theia/bin/heat.rb",
+		"/home/wmak/development/Theia/db/migrate/20140121211009_create_readings.rb",
+		"/home/wmak/development/Theia/app/views/widget/new.html.erb",
+		"/home/wmak/development/Theia/db/migrate/20140120232735_create_widgets.rb",
+		"/home/wmak/development/Theia/app/controllers/widget_controller.rb",
+		"/home/wmak/.config/sublime-text-2/Packages/User/os161.sublime-build",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/views.py",
+		"/home/wmak/development/Lethargic-Development/automation/scripts/admin_upload.py",
+		"/home/wmak/development/Lethargic-Development/automation/scripts/admin_schedule.py",
+		"/home/wmak/development/Lethargic-Development/automation/modules/tailored/webdriver.py",
+		"/home/wmak/development/Lethargic-Development/automation/modules/tailored/remotecontrol.py",
+		"/home/wmak/development/Lethargic-Development/README.md",
+		"/home/wmak/development/Lethargic-Development/automation/conftest.py",
+		"/home/wmak/development/Sisyphus/main.py",
+		"/home/wmak/development/Sisyphus/image_decider.py",
+		"/home/wmak/development/Sisyphus/config.py",
+		"/home/wmak/development/Sisyphus/config.ini",
+		"/home/wmak/development/Sisyphus/.gitignore",
+		"/home/wmak/development/Sisyphus/gtk_spinbutton.py",
+		"/home/wmak/development/cscc85/project4/shortcut.sh",
+		"/home/wmak/development/cscc85/project4/src/per_roboAI.c",
+		"/home/wmak/development/cscc85/project4/make.sh",
+		"/home/wmak/development/cscc85/project4/src/Makefile",
+		"/home/wmak/development/cscc85/project4/Makefile",
+		"/home/wmak/development/cscc85/project4/src/API/README.txt",
+		"/home/wmak/development/cscc85/project4/Bluetooth/nxtlibc-0.1/README",
+		"/home/wmak/development/cscc85/project4/README.md",
+		"/home/wmak/Documents/Dear Tab",
+		"/home/wmak/development/cscc85/project4/src/roboAI.c",
+		"/home/wmak/development/background-changer.sh",
+		"/home/wmak/development/background_changer.py",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/background-changer.sh",
+		"/home/wmak/development/cscc85/project3/starter/Lander_Control.cpp",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/templates/csvimport.html",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/urls.py",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/utils/csvutils.py",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/utils/classesutils.py",
+		"/home/wmak/development/Lethargic-Development/CMSReScheduler/CMSReScheduler/test.csv",
+		"/home/wmak/development/demeter/helper/checkproxy.py",
+		"/home/wmak/development/demeter/client_homeofpoi.py",
+		"/home/wmak/development/medusa/Medusa/Medusa/settings.py",
+		"/home/wmak/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/wmak/development/Lethargic-Development/.gitignore",
+		"/home/wmak/Downloads/cscc01/phase1.css",
+		"/home/wmak/Downloads/cscc01/phase1.html",
+		"/home/wmak/.cache/.fr-IkVgs2/README",
+		"/home/wmak/Documents/CSCC85-Lec04.mdown",
+		"/home/wmak/Dropbox/Sharing/Shai/Lethargic Development.mdown",
+		"/home/wmak/Dropbox/GUITAR TABS/hide your tears guitar tab.txt",
+		"/home/wmak/Dropbox/CSC/Lethargic Development.mdown",
+		"/home/wmak/Dropbox/CSC/intro to latex.tex",
+		"/home/wmak/Documents/CSCC85-Lec02.html",
+		"/home/wmak/development/medusa/Medusa/deals/views.py",
+		"/home/wmak/Documents/cscc01/Automarker.mdown",
+		"/home/wmak/Documents/cscc01/test.java",
+		"/home/wmak/Documents/CSCC01-Lec01.mdown",
+		"/home/wmak/development/medusa/Medusa/Medusa/templates/checkout.html",
+		"/home/wmak/development/medusa/Medusa/Medusa/templates/login.html",
+		"/home/wmak/development/medusa/Medusa/Medusa/media/js/login.js",
+		"/home/wmak/development/medusa/Medusa/Medusa/views.py",
+		"/home/wmak/development/medusa/Medusa/Medusa/media/js/toggle.js",
+		"/home/wmak/development/medusa/Medusa/Medusa/templates/product.html",
+		"/home/wmak/development/medusa/Medusa/Medusa/media/js/maps.js",
+		"/home/wmak/development/medusa/Medusa/Medusa/media/js/product.min.js",
+		"/home/wmak/development/medusa/Medusa/admin.py",
+		"/home/wmak/development/medusa/Medusa/deals/admin.py",
+		"/home/wmak/development/medusa/Medusa/Medusa/templates/home.html",
+		"/home/wmak/development/medusa/Medusa/Medusa/templates/search.html",
+		"/home/wmak/development/medusa/Medusa/Medusa/urls.py",
+		"/home/wmak/development/medusa/Medusa/Medusa/media/js/product.js",
+		"/home/wmak/development/medusa/Medusa/deals/models.py",
+		"/home/wmak/development/medusa/Medusa/Medusa/cart.py",
+		"/home/wmak/development/medusa/Medusa/initial_data.json",
+		"/home/wmak/development/medusa/walmart.json",
+		"/home/wmak/development/medusa/Medusa/Medusa/templates/search/search.html",
+		"/home/wmak/development/medusa/Medusa/deals/search_indexes.py",
+		"/home/wmak/development/demeter/scripts/oneclass.py",
+		"/home/wmak/development/demeter/client_oneclass.py",
+		"/home/wmak/development/demeter/helper/mailgen.py",
+		"/home/wmak/development/demeter/client.py"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"    ",
+			"all_stop",
+			"setupAI",
+			"f",
+			".red",
+			"b",
+			"c",
+			"RT1",
+			"y",
+			"x",
+			"a",
+			"cl_x",
+			"cl_y",
+			"G1",
+			"R1",
+			"pixels[floor(fx)][floor(fy)]",
+			"	 ",
+			"\n ",
+			" ",
+			"	 ",
+			"\n ",
+			"current_time",
+			"Main_Thruster",
+			"Set_An",
+			"printf",
+			"Modify_y",
+			"Check_y",
+			"DoNothin",
+			"();//",
+			");\n",
+			"}\n",
+			"=====",
+			"Left_Thruster",
+			"Left_Th",
+			"department",
+			"room",
+			"type",
+			"    ",
+			"Department",
+			"Enrolment",
+			"Name",
+			"current[0]",
+			"(**Value:**)(**Cost:**)",
+			"(**Value:**2)(**Cost:**2)",
+			"(**Value:**0)(**Cost:**1)",
+			"(**Value:**4)(**Cost:**1)",
+			"(**Value:**5)(**Cost:**3)",
+			"(**Value:**4)(**Cost:**3)",
+			"(**Value:**5)(**Cost:**2)",
+			"(**Value:**5)(**Cost:**1)",
+			"(**Value:**3)(**Cost:**1)",
+			"(**Value:**3)(**Cost:**2)",
+			"an _Administrator_",
+			"Administrator",
+			"Lethargic Development",
+			"1. As Lethargic Development I would like to do investigation towards a suitable database engine\n- As Lethargic Development I would like to investigate a solution between Django and a command-line\n- As Lethargic Development I would like to design the user experience\n- As Lethargic Development I would like to design the user interface\n\n### Development\n1. As Lethargic Development I would like to setup the Git Repo\n- As Lethargic Development I would like to setup the Django environment\n- As an Administrator I would like to submit a schedule from a file\n- As an Administrator I would like to view the schedule\n- As an Administrator I would like to be able to submit the current student enrollment\n- As an Administrator I would like to modify the schedule\n- As an Administartor I would like to be notified when a schedule modification will cause a conflict\n- As an Administrator I would like to be able to export my changes\n- As Lethargic Development I would like to be able to overwrite changes made by an Administrator\n- As an Administrator I would like to be notified as to schedule changes pertaining to me\n- As an Administrator I would like a command line interface with the application\n- As The Chair of the Department I would like to be able to prohibit changes as i see fit\n\n### Testing\n1. As Lethargic Development I would like to create an Test Automation suite\n- As Lethargic Development I would like to create testcases to validate the final product\n- As Lethargic Development I would like to look into a continuos integration solutionu",
+			"Lethargic Development",
+			"m.digest()",
+			"    ",
+			"decifer_cart",
+			"django.contrib.auth",
+			"{\n",
+			"_setup_item",
+			"decifer",
+			"  ",
+			"DirectionsDisplay",
+			"  ",
+			"http://www.walmart.ca",
+			"  ",
+			"    ",
+			"listdir",
+			"    ",
+			"update_session",
+			"    ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"products",
+			"\\\"",
+			"product_names",
+			".close()",
+			"\\\"",
+			"\"\"",
+			"name",
+			"Root",
+			"\"location\" : \"walmart\",",
+			"\"location\" : \"walmart\",\n		}",
+			"true"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\t",
+			"",
+			"\"location\" : \"walmart\"",
+			"\"location\" : \"walmart\",\n		},"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/readings/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/assets/javascripts/mixitup.min.js",
+					"settings":
+					{
+						"buffer_size": 16321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								2
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/reading.rb",
+					"settings":
+					{
+						"buffer_size": 587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								586,
+								586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 164.0
+	},
+	"output.markdown":
+	{
+		"height": 116.0
+	},
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true
+}
