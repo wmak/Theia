@@ -2,38 +2,16 @@
 	<head>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript">
+			temp_data = [['Time', 'Temperature'], <% @readings.each do |reading| %>[new Date ("<%=reading.created_at%>") , <%=reading.temp%>],<% end %>]
+			fan_data = [['Time', 'RPMs'], <% @readings.each do |reading| %>[new Date ("<%=reading.created_at%>") , <%=reading.fan%>],<% end %>]
 			google.load("visualization", "1", {packages:["corechart"]});
-			google.setOnLoadCallback(drawTempChart);
-			google.setOnLoadCallback(drawFanChart);
-			function drawTempChart() {
-				var data = google.visualization.arrayToDataTable([
-				['Time', 'Temperature'],
-				<% @readings.each do |reading| %>
-					[new Date ("<%=reading.created_at%>") , <%=reading.temp%>],
-				<% end %>
-				]);
+			google.setOnLoadCallback(function() {drawChart(temp_data, "temp_div")});
+			google.setOnLoadCallback(function() {drawChart(fan_data, "fan_div")});
+			function drawChart(readings, elementDiv) {
+				data = google.visualization.arrayToDataTable(readings);
 
-				var options = {
-					title: 'Temperature Readings'
-				};
-
-				var chart = new google.visualization.LineChart(document.getElementById("temp_div"));
-				chart.draw(data, options);
-			}
-			function drawFanChart() {
-				var data = google.visualization.arrayToDataTable([
-				['Time', 'RPMs'],
-				<% @readings.each do |reading| %>
-					[new Date ("<%=reading.created_at%>") , <%=reading.fan%>],
-				<% end %>
-				]);
-
-				var options = {
-					title: 'Fan RPM'
-				};
-
-				var chart = new google.visualization.LineChart(document.getElementById("fan_div"));
-				chart.draw(data, options);
+				var chart = new google.visualization.LineChart(document.getElementById(elementDiv));
+				chart.draw(data);
 			}
 		</script>
 	</head>
