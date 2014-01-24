@@ -2,17 +2,38 @@
 	<head>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript">
-			temp_data = [['Time', 'Temperature'], <% @readings.each do |reading| %>[new Date ("<%=reading.created_at%>") , <%=reading.temp%>],<% end %>]
-			fan_data = [['Time', 'RPMs'], <% @readings.each do |reading| %>[new Date ("<%=reading.created_at%>") , <%=reading.fan%>],<% end %>]
 			google.load("visualization", "1", {packages:["corechart"]});
-			google.setOnLoadCallback(function() {drawChart(temp_data, "temp_div")});
-			google.setOnLoadCallback(function() {drawChart(fan_data, "fan_div")});
+			var j = 3
+			var temperatures = [['Time', 'Temperature']]
+			var fan = [['Time', 'fan']]
+			google.setOnLoadCallback(function() {
+				drawChart(temperatures, "temp_div")
+				drawChart(fan, "fan_div")
+			});
+			function updateData() {
+				temperatures = [['Time', 'Temperature']]
+				fan = [['Time', 'fan']]
+				$.get("readings/" + j, function( request ){
+					for (var i=0; i < request.length; i++){
+						temperatures.push([new Date (request[i].created_at), request[i].temp]);
+						fan.push([new Date (request[i].created_at), request[i].fan]);
+					}
+				}, "json");
+			}
 			function drawChart(readings, elementDiv) {
+				console.log(readings);
 				data = google.visualization.arrayToDataTable(readings);
-
 				var chart = new google.visualization.LineChart(document.getElementById(elementDiv));
 				chart.draw(data);
+				return chart
 			}
+			function update() {
+				j += 1;
+				updateData();
+				drawChart(temperatures, "temp_div")
+			}
+			update();
+			setInterval(update, 1000)
 		</script>
 	</head>
 	<body>

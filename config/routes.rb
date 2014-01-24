@@ -6,11 +6,11 @@ Theia::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  resources :widgets 
-  resources :readings
-
+  get 'readings/:time' => 'readings#data'
   get 'readings' => 'readings#index'
 
+  resources :widgets 
+  resources :readings
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
