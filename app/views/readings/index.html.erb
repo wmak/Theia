@@ -1,39 +1,28 @@
 <html>
 	<head>
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="/assets/dygraphs-combined.js"></script>
 		<script type="text/javascript">
-			google.load("visualization", "1", {packages:["corechart"]});
-			var j = 3
-			var temperatures = [['Time', 'Temperature']]
-			var fan = [['Time', 'fan']]
-			google.setOnLoadCallback(function() {
-				drawChart(temperatures, "temp_div")
-				drawChart(fan, "fan_div")
-			});
+			var j = 10
+			var temperatures = [];
+			var fan = [];
 			function updateData() {
-				temperatures = [['Time', 'Temperature']]
-				fan = [['Time', 'fan']]
 				$.get("readings/" + j, function( request ){
+					temperatures = [];
+					fan = [];
 					for (var i=0; i < request.length; i++){
 						temperatures.push([new Date (request[i].created_at), request[i].temp]);
 						fan.push([new Date (request[i].created_at), request[i].fan]);
 					}
+					tempChart.updateOptions({"file" : temperatures});
+					fanChart.updateOptions({"file" : fan});
 				}, "json");
 			}
-			function drawChart(readings, elementDiv) {
-				console.log(readings);
-				data = google.visualization.arrayToDataTable(readings);
-				var chart = new google.visualization.LineChart(document.getElementById(elementDiv));
-				chart.draw(data);
-				return chart
-			}
-			function update() {
-				j += 1;
+			window.onload = function WindowLoad(event) {
+				tempChart = new Dygraph(document.getElementById("temp_div"), temperatures, {labels : ["Date", "Temperatures"]});
+				fanChart = new Dygraph(document.getElementById("fan_div"), fan, {labels : ["Date", "Fan RPM"]});
 				updateData();
-				drawChart(temperatures, "temp_div")
+				setInterval(updateData, 60000)
 			}
-			update();
-			setInterval(update, 1000)
 		</script>
 	</head>
 	<body>

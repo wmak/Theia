@@ -1,6 +1,6 @@
 class ReadingsController < ApplicationController
 	def index
-		@readings = Reading.last(200)
+		@readings = Reading.last(10)
 	end
 
 	def data
