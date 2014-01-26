@@ -7,10 +7,7 @@ Theia::Application.routes.draw do
   root 'welcome#index'
 
   get 'readings/:time' => 'readings#data'
-  get 'readings' => 'readings#index'
-
   resources :widgets 
-  resources :readings
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
