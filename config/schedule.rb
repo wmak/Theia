@@ -24,3 +24,7 @@ set :output, "log/cron.log"
 every 1.minute do
 	runner "Temperature.read_sensors", environment => "development"
 end
+
+every 1.minute do
+	runner "Processor.cpu_usage", environment => "development"
+end

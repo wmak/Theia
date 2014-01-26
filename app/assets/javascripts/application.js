@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function start() {
+  TempLoad();
+  CpuLoad();
+}
+window.onload = start;

@@ -1,9 +1,8 @@
-var j = 10
 var temperatures = [];
 var fan = [];
 var options = {"colors" : "#FF0000"}
-function updateData(info) {
-	$.get("temperatures/" + j, function( request ){
+function updateTemp(info) {
+	$.get("temperatures/10", function( request ){
 		temperatures = [];
 		fan = [];
 		for (var i=0; i < request.length; i++){
@@ -14,9 +13,9 @@ function updateData(info) {
 		fanChart.updateOptions({"file" : fan});
 	}, "json");
 }
-window.onload = function WindowLoad(event) {
+function TempLoad(event) {
 	tempChart = new Dygraph(document.getElementById("temp_div"), temperatures, jQuery.extend({labels : ["Date", "Temperatures"]}, options));
 	fanChart = new Dygraph(document.getElementById("fan_div"), fan, jQuery.extend({labels : ["Date", "Fan RPM"]}, options));
-	updateData();
-	setInterval(updateData, 20000)
+	updateTemp();
+	setInterval(updateTemp, 20000)
 }
