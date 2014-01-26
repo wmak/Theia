@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140121213705) do
+ActiveRecord::Schema.define(version: 20140126150903) do
 
-  create_table "readings", force: true do |t|
+  create_table "temperatures", force: true do |t|
     t.float    "temp"
     t.datetime "created_at"
     t.datetime "updated_at"

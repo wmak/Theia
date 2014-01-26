@@ -1,4 +1,4 @@
-class Reading < ActiveRecord::Base
+class Temperature < ActiveRecord::Base
 	def self.read_sensors
 		for i in 0..3
 			#read input from sensors http://lm-sensors.org/
@@ -16,8 +16,8 @@ class Reading < ActiveRecord::Base
 			m = sensors.scan(temp_re)
 			average_temp = m.collect{|i| i[0].to_f}.inject{|sum,x| sum + x }/m.size
 
-			@reading = self.new(:fan => fan.to_f,:temp => average_temp)
-			@reading.save
+			@temperature = self.new(:fan => fan.to_f,:temp => average_temp)
+			@temperature.save
 			sleep(20)
 		end
 	end

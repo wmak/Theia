@@ -3,7 +3,7 @@ var temperatures = [];
 var fan = [];
 var options = {"colors" : "#FF0000"}
 function updateData(info) {
-	$.get("readings/" + j, function( request ){
+	$.get("temperatures/" + j, function( request ){
 		temperatures = [];
 		fan = [];
 		for (var i=0; i < request.length; i++){
