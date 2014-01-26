@@ -21,6 +21,6 @@
 
 set :output, "log/cron.log"
 
-every 1.minutes do
+every 1.minute do
 	runner "Reading.read_sensors", environment => "development"
 end
