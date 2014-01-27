@@ -1,8 +1,8 @@
-var temperatures = [];
-var fan = [];
+var temperatures = [[1,1]];
+var fan = [[1,1]];
 var options = {"colors" : "#FF0000"}
-function updateTemp(info) {
-	$.get("temperatures/10", function( request ){
+function updateTemp() {
+	$.get("temperatures/50", function( request ){
 		temperatures = [];
 		fan = [];
 		for (var i=0; i < request.length; i++){

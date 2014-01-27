@@ -1,7 +1,7 @@
-var processor = [];
+var processor = [[1,1]];
 var options = {"colors" : "#FF0000"}
-function updateCpu(info) {
-	$.get("processors/10", function( request ){
+function updateCpu() {
+	$.get("processors/50", function( request ){
 		processor = [];
 		for (var i=0; i < request.length; i++){
 			processor.push([new Date (request[i].created_at), request[i].cpu]);
