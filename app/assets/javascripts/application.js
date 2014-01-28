@@ -19,4 +19,8 @@ function start() {
   TempLoad();
   CpuLoad();
 }
+function update() {
+  updateCpu();
+  updateTemp();
+}
 window.onload = start;
