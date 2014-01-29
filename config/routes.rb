@@ -8,6 +8,7 @@ Theia::Application.routes.draw do
 
   get 'temperatures/:time' => 'temperatures#data'
   get 'processors/:time' => 'processors#data'
+  get 'logs/:time' => 'logs#data'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

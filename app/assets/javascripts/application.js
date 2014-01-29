@@ -18,9 +18,11 @@
 function start() {
   TempLoad();
   CpuLoad();
+  MemLoad();
 }
 function update() {
   updateCpu();
   updateTemp();
+  updateMem();
 }
 window.onload = start;

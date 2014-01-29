@@ -28,3 +28,7 @@ end
 every 1.minute do
 	runner "Processor.cpu_usage", environment => "development"
 end
+
+every 1.minute do
+	runner "Log.read_top", environment => "development"
+end
