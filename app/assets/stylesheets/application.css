@@ -11,3 +11,53 @@
  *= require_self
  *= require_tree .
  */
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('/assets/glyphicons-halflings-regular.eot');
+	src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+	font-family: 'Glyphicons Halflings';
+}
+
+.glyphicon-refresh:before {
+	content: "\e031";
+}
+
+#widget-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.widget {
+	display: inline-block;
+	margin: 10px;
+	float: left;
+	background: #efefef;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #222
+}
+
+.widget button{
+	position: relative;
+	left: 350px;
+	top: -24px;
+}
+
+.graph-title{
+	font-size: 20px;
+	text-align: center;
+}
+
+.graph {
+	width: 400px;
+	height: 200px;
+}
+
+.navbar{
+	display:none
+}
