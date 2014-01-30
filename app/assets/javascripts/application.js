@@ -17,12 +17,10 @@
 
 function start() {
   TempLoad();
-  CpuLoad();
-  MemLoad();
+  LogLoad();
 }
 function update() {
-  updateCpu();
   updateTemp();
-  updateMem();
+  updateLog();
 }
 window.onload = start;

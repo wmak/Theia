@@ -1,18 +1,36 @@
 var memory = [[1,1]];
+var processor = [[1,1]];
 var options = {"colors" : "#FF0000"}
-var regex = /KiB Mem:.*?\d*? total,.*?(\d*?) used/;
+var memregex = /KiB Mem:.*?\d*? total,.*?(\d*?) used/;
+var cpuregex = /%Cpu\(s\): \d*?.\d us(?:.|\n)*?%Cpu\(s\): (\d*?.\d) us/
 function updateMem() {
-	$.get("logs/50", function( request ){
+	$.get("logs/10", function( request ){
 		memory = [];
 		for (var i=0; i < request.length; i++){
-			var myArray = regex.exec(request[i].reading);
+			var myArray = memregex.exec(request[i].reading);
 			memory.push([new Date (request[i].created_at), myArray[1]/1024]);
 		}
 		memChart.updateOptions({"file" : memory});
 	}, "json");
 }
-function MemLoad(event) {
-	memChart = new Dygraph(document.getElementById("mem_div"), memory, jQuery.extend({labels : ["Date", "Memory usage"]}, options));
+function updateCpu() {
+	$.get("logs/10", function( request ){
+		processor = [];
+		for (var i=0; i < request.length; i++){
+			var result = cpuregex.exec(request[i].reading);
+			if (result)
+				processor.push([new Date (request[i].created_at), result[1]]);
+		}
+		cpuChart.updateOptions({"file" : processor});
+	}, "json");
+}
+function updateLog(event) {
 	updateMem();
-	setInterval(updateMem, 20000)
+	updateCpu();
+}
+function LogLoad(event) {
+	memChart = new Dygraph(document.getElementById("mem_div"), memory, jQuery.extend({labels : ["Date", "Memory usage"]}, options));
+	cpuChart = new Dygraph(document.getElementById("cpu_div"), processor, jQuery.extend({labels : ["Date", "CPU usage"]}, options));
+	updateLog();
+	setInterval(updateLog, 20000);
 }
