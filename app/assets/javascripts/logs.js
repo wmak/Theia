@@ -2,7 +2,7 @@ var memory = [[1,1]];
 var processor = [[1,1]];
 var options = {"colors" : "#FF0000"}
 var memregex = /KiB Mem:.*?\d*? total,.*?(\d*?) used/;
-var cpuregex = /%Cpu\(s\): \d*?.\d us(?:.|\n)*?%Cpu\(s\): (\d*?.\d) us/
+var cpuregex = /Cpu(?:.|\n)*Cpu\(s\):\s*(\d*\.\d*)/;
 function updateMem() {
 	$.get("logs/10", function( request ){
 		memory = [];
